@@ -4,4 +4,8 @@ console.log(result1);
 // flatMap
 let result2 = arr.flatMap((item) => [item * 2]);
 console.log(result2);
-// make it 2d arr
+// make it 2d arr using reduce method
+let result3 = arr.reduce((acc, cur) => {
+  return acc.concat(cur * 2);
+}, []);
+console.log(result3);
