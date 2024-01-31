@@ -13,7 +13,6 @@ function myMap(arr, cb) {
   return newArr;
 }
 // Testing our custom map()
-
 const sqrResult = myMap(arr, (val, indx, arr) => {
   return (val *= val);
 });
