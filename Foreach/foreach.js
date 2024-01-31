@@ -1,5 +1,5 @@
 let arr = [1, 2, 3, 4, 5, 6];
-//NOTE - Builtin Foreach
+//NOTE - Built in forEach()
 const result = arr.forEach((val, indx, arr) => {
   console.log(val);
 });
