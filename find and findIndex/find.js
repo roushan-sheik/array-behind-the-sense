@@ -26,3 +26,16 @@ const result2 = myFind(orderBooks, (book, indx) => {
   return book.name == "C";
 });
 console.log(result2);
+//NOTE -  Findindex() method behind the sense
+
+function myFind(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i], i, arr)) {
+      return i;
+    }
+  }
+}
+const result3 = myFind(orderBooks, (book) => {
+  return book.price == 50;
+});
+console.log(result3);
